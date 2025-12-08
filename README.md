@@ -1,15 +1,15 @@
-# 📉 Betting Against Technical Analysis: A Quantitative Reality Check
+#  Betting Against Technical Analysis: A Quantitative Reality Check
 
 
 > *"In theory, there is no difference between theory and practice. In practice, there is."* - Yogi Berra
 
-## 🎯 Executive Summary
+##  Executive Summary
 
 This project delivers a **brutal reality check** on technical analysis strategies through rigorous quantitative analysis. Using 7 years of data across 10 major US stocks, we pit popular technical indicators against the humble buy-and-hold strategy.
 
 **The verdict?** Technical analysis strategies consistently underperform passive investing, with many showing negative returns while buy-and-hold delivers consistent gains.
 
-### 🏆 Key Findings
+###  Key Findings
 - **Buy-and-Hold wins 85% of the time** across all stocks and metrics
 - Technical indicators show **inconsistent performance** with frequent drawdowns >50%
 - **Random trading occasionally beats TA strategies** - highlighting market noise dominance
@@ -17,7 +17,7 @@ This project delivers a **brutal reality check** on technical analysis strategie
 
 ---
 
-## 🚀 Project Motivation
+##  Project Motivation
 
 Technical analysis is a $2+ billion industry with millions of traders relying on chart patterns, indicators, and "signals" to time the market. Popular trading courses, YouTube channels, and financial media constantly promote TA strategies as the key to beating the market.
 
@@ -29,7 +29,7 @@ This project answers that question with cold, hard data - no opinions, no cherry
 
 ## 📊 The Battleground: Strategies Tested
 
-### 🎯 **The Contenders**
+###  **The Contenders**
 
 | Strategy | Type | Logic | Theoretical Advantage |
 |----------|------|-------|----------------------|
@@ -40,7 +40,7 @@ This project answers that question with cold, hard data - no opinions, no cherry
 | **Random Trading** | Control | Random buy/sell decisions | Baseline for comparison |
 | **Buy & Hold** | Passive | Buy once, hold forever | Captures long-term market growth |
 
-### 🎲 **The Arena**
+###  **The Arena**
 
 **10 Major US Stocks:** AAPL, MSFT, GOOGL, AMZN, TSLA, META, NVDA, JPM, DIS, NFLX
 
@@ -50,7 +50,7 @@ This project answers that question with cold, hard data - no opinions, no cherry
 
 ---
 
-## 💻 Technical Implementation
+##  Technical Implementation
 
 ### 🛠 **Core Architecture**
 
@@ -62,7 +62,7 @@ Data Acquisition → Signal Generation → Performance Calculation → Risk Anal
                                                                 Max Drawdown
 ```
 
-### 📈 **Performance Metrics**
+###  **Performance Metrics**
 
 - **Cumulative Returns**: Total percentage gain over the period
 - **Sharpe Ratio**: Risk-adjusted returns (higher = better risk/reward)
@@ -105,8 +105,8 @@ OVERALL PERFORMANCE SCORECARD (2018-2025)
 │ DIS     │ +2%          │ +213% 👑    │ ✅ TA WINS   │
 └─────────┴──────────────┴─────────────┴──────────────┘
 
-📈 BUY & HOLD WIN RATE: 80% (8/10 stocks)
-📊 AVERAGE RETURNS:
+ BUY & HOLD WIN RATE: 80% (8/10 stocks)
+ AVERAGE RETURNS:
    • Buy & Hold: +664%  
    • Best TA Strategy: +207%
    • Worst TA Strategy: -45%
@@ -133,7 +133,7 @@ TECHNICAL ANALYSIS HORROR STORIES
    • NVDA: Random +55% vs RSI -30%
 ```
 
-### 📊 **Performance Highlights**
+###  **Performance Highlights**
 
 | Stock | Buy & Hold | Best TA Strategy | Worst TA Strategy | Random |
 |-------|------------|------------------|-------------------|---------|
@@ -144,7 +144,7 @@ TECHNICAL ANALYSIS HORROR STORIES
 
 *Note: Results vary by implementation and market conditions*
 
-### 📉 **The Harsh Reality**
+###  **The Harsh Reality**
 
 #### ✅ **What Worked:**
 - **Buy-and-Hold**: Consistent winner across all metrics
@@ -156,7 +156,7 @@ TECHNICAL ANALYSIS HORROR STORIES
 - **Market Timing**: Generated more noise than signal
 - **Complexity**: More indicators ≠ better performance
 
-### 🎲 **The Random Trading Revelation**
+**The Random Trading Revelation**
 
 Perhaps most shocking: **random trading strategies occasionally outperformed sophisticated technical indicators**. This suggests that many TA signals are indistinguishable from noise.
 
@@ -164,9 +164,9 @@ Perhaps most shocking: **random trading strategies occasionally outperformed sop
 
 
 
-## 📊 Deep Dive: Methodology
+##  Deep Dive: Methodology
 
-### 🔍 **Data Quality Assurance**
+###  **Data Quality Assurance**
 
 - **Survivorship Bias**: Only included stocks that traded throughout the entire period
 - **Adjusted Prices**: Used split and dividend-adjusted prices from Stooq
@@ -196,7 +196,7 @@ Perhaps most shocking: **random trading strategies occasionally outperformed sop
 - **Buy**: Price touches or breaches lower band
 - **Sell**: Price touches or breaches upper band
 
-### ⚖️ **Performance Measurement**
+###  **Performance Measurement**
 
 ```python
 # Sharpe Ratio Calculation
@@ -210,9 +210,9 @@ max_drawdown = drawdown.min()
 
 ---
 
-## 🎭 Critical Analysis & Limitations
+##  Critical Analysis & Limitations
 
-### ⚠️ **Study Limitations**
+###  **Study Limitations**
 
 1. **Transaction Costs**: Not included (would worsen TA performance)
 2. **Slippage**: Perfect execution assumed
@@ -220,37 +220,12 @@ max_drawdown = drawdown.min()
 4. **Time Period**: 7 years may not capture all market cycles
 5. **Parameter Optimization**: Used standard parameters (no curve-fitting)
 
-### 🤔 **Alternative Explanations**
+###  **Alternative Explanations**
 
 - **Market Efficiency**: Perhaps markets have become more efficient
 - **Strategy Saturation**: Popular TA strategies may be arbitraged away
 - **Bull Market Bias**: Study period favored buy-and-hold
 - **Implementation**: Real traders might use more sophisticated variants
-
-### 🔮 **Future Research Directions**
-
-- [ ] **Multi-Asset Classes**: Test on bonds, commodities, currencies
-- [ ] **International Markets**: Emerging markets, different time zones
-- [ ] **Alternative Timeframes**: Intraday, weekly, monthly signals
-- [ ] **Machine Learning**: Can AI improve TA strategy performance?
-- [ ] **Transaction Costs**: Model realistic trading costs and taxes
-- [ ] **Regime Analysis**: Performance during bull vs bear markets
-
----
-
-## 📈 Visualization Gallery
-
-### 📊 **Sample Output: Cumulative Returns**
-```
-Strategy Performance Comparison (AAPL, 2018-2025)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Buy & Hold:      █████████████████████ 418.2%
-SMA Crossover:   ████▌                  37.1%
-MACD:           ███▌                   23.4%
-Bollinger:      ██▌                    15.8%
-Random:         █▌                      12.3%
-RSI:            ▌                      -24.1%
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
 
 
